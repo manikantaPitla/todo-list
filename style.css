@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_container {
+    height: 100vh;
+
+}
+
+.task_input_container {
+    height: 100vh;
+    background-image: linear-gradient(to top, #0061ff, #60efff);
+    position: sticky;
+    top: 0;
+    background-image: url(https://res.cloudinary.com/djkatupvr/image/upload/v1684227586/todo/check-list-with-businessman-flat-design_79603-145_nj5nqu.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.task_input_container::before {
+    content: "";
+    background-image: linear-gradient(to top, #0061ff, #60efff);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.input_section {
+    width: 90%;
+    background-color: #ffffff;
+    height: 50px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+
+}
+
+.input_section input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0px 82px 0px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.input_section .btn_section {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 80px;
+    padding: 5px;
+}
+
+.btn_section button {
+    background-image: linear-gradient(to top, #0061ff, #60efff);
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.task_list_section li {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin: 15px 0px;
+    padding: 20px 15px;
+    list-style: none;
+    position: relative;
+    border-radius: 6px;
+}
+
+.task_list_section li p {
+    margin: 0px;
+    padding-left: 35px;
+    font-weight: 500;
+}
+
+.task_list_section li i {
+    position: absolute;
+    cursor: pointer;
+    top: 34%;
+    font-size: 19px;
+}
+
+.task_list_section li .fa-trash {
+    right: 20px;
+    color: red;
+}
+
+.task_list_section li .fa-circle-check {
+    left: 20px;
+    color: grey;
+}
+
+
+.completed_task_active {
+    color: green !important;
+}
+
+.completed_line_strike {
+    text-decoration: line-through;
+}
